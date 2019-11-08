@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.jwellman</groupId>
+  <artifactId>file-dropper</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>File Dropper</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- java.version is Spring Boot specific...
+        <java.version>1.8</java.version>
+         -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+
+        <dependency>
+            <groupId>org.jwellman</groupId>
+            <artifactId>foundation</artifactId>
+            <version>1.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- FolderChoooser, ... -->
+	    <dependency>
+	      <groupId>com.jidesoft</groupId>
+	      <artifactId>jide-oss</artifactId>
+	      <version>3.6.18</version>
+	    </dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.6</version>
+		</dependency>
+
+        <!-- Not available in maven central; see local repo -->
+        <dependency>
+            <groupId>com.nilo.plaf</groupId>
+            <artifactId>nimrod</artifactId>
+            <version>1.2d</version>
+        </dependency>
+
+        <dependency>    
+            <groupId>com.jtattoo</groupId>  
+            <artifactId>JTattoo</artifactId>    
+            <version>1.6.11</version>   
+        </dependency>          
+                   
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>3.8.1</version>
+	      <scope>test</scope>
+	    </dependency>
+    
+  </dependencies>
+  
+</project>
