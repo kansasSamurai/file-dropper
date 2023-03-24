@@ -14,17 +14,19 @@ import org.jwellman.foundation.interfaces.uiThemeProvider;
 public class App extends AbstractSimpleMain implements uiThemeProvider {
 	
     public static void main( String[] args ) {
-        new App().startup(true, args);
+        //new App().startup(true, args);
+        
+        new App().simpleStartup("", new UserInterface());
     }
     
     private App startup(boolean asMainFrame, String[] args) {
         final uContext context = uContext.createContext();
         context.setThemeProvider(this);
         context.setDimension(85);
-        context.setLookAndFeel(Foundation.LAF_JTATTOO);        
+        // context.setLookAndFeel(Foundation.LAF_JTATTOO);
 
         // Step 1 - Initialize Swing
-        final Foundation f = Foundation.init(context);
+        final Foundation f = Foundation.init(Foundation.APPTYPE.STANDALONE, context);
 
         // Step 2 - Create your UIs in JPanel(s)
         mainui = f.registerUI("viewer", new UserInterface());

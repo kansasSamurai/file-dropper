@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.jwellman</groupId>
             <artifactId>foundation</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.2-SNAPSHOT</version>
         </dependency>
 
         <!-- FolderChoooser, ... -->
@@ -42,19 +42,6 @@
 		    <version>2.6</version>
 		</dependency>
 
-        <!-- Not available in maven central; see local repo -->
-        <dependency>
-            <groupId>com.nilo.plaf</groupId>
-            <artifactId>nimrod</artifactId>
-            <version>1.2d</version>
-        </dependency>
-
-        <dependency>    
-            <groupId>com.jtattoo</groupId>  
-            <artifactId>JTattoo</artifactId>    
-            <version>1.6.11</version>   
-        </dependency>          
-                   
 	    <dependency>
 	      <groupId>junit</groupId>
 	      <artifactId>junit</artifactId>
